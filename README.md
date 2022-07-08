@@ -47,7 +47,14 @@ Database/.
 - VIEW_nyse_data - Table for analytics and public access.
 
 # PostgreSQL tables structure:
-## nyse_data - table:
+#### nyse_ticker_list - table:
+
+| Ticker | Name |
+|:-----------:|:------------:|
+| Varchar(30) | Varchar(100) |
+| GIBL | GibleMibele mobyle company |
+
+#### nyse_data - table:
 
 | Date | Symbols | Adj_close | Close | High | Low | Open | Volume |
 |:----:|:-----------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
