@@ -1,9 +1,11 @@
 <a id="anchor"></a>
-# Python and PostgreSQL on financial markets.<br>
+# Server with financial data.<br>
 
-Private server with an archive of quotes from the world's largest exchanges. Daily, updated databases and automatic addition to PostgreSQL<br>
+Private server with an archive of quotes from the world's largest exchanges.<br>
+Automation with the PostgreSQL Database with daily updates.<br>
 
 The project is open for everyone but was created for personal use.<br>
+Вся информация доступна на Русском языке >>> [Gitflic.ru](https://gitflic.ru/project/kseno/servernew)
 
 # Technical requirements.
 
