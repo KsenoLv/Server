@@ -49,9 +49,9 @@ Database/.
 # PostgreSQL tables structure:
 
 
-| Date | Symbols | Adj_close | Close | High | Low | Open | Volume
-| Date | Varchar(10) | Numeric(21,15) | Numeric(21,15) | Numeric(21,15) | Numeric(21,15) | Numeric(21,15) | Numeric(13,2)
-| 1983-05-09 | GIBL | 13.1234.. | 13.1234.. | 13.1234.. | 13.1234.. | 13.1234.. | 123456789.12
+| Date | Symbols | Adj_close | Close | High | Low | Open | Volume |
+| Date | Varchar(10) | Numeric(21,15) | Numeric(21,15) | Numeric(21,15) | Numeric(21,15) | Numeric(21,15) | Numeric(13,2) |
+| 1983-05-09 | GIBL | 13.1234.. | 13.1234.. | 13.1234.. | 13.1234.. | 13.1234.. | 123456789.12 |
 
 ----
 
