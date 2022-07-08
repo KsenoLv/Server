@@ -16,7 +16,7 @@ VPS/VDS - Windows server.<br>
 
 ## Description.
 
-Fully automate VPS/VDS server.<br>
+Fully automate VPS/VDS server.<br><br>
 Using Python we create a script for parsing quotes from the site Yahoo Finance.<br>
 The script is activated at a certain time every day to load new data.<br>
 Import the obtained quote file into the PostgreSQL database.<br>
@@ -30,11 +30,11 @@ Simple audit of tables and the entire database.<br>
 
 In this example, we'll look at downloading NYSE stock quotes.<br>
 Creating a database and setting up automatic updates.
-<br>
+<br><br>
 Here is the source file that is updated every day at . 
-<br>
+<br><br>
 Example database:
-<br>
+<br><br>
 Period of data = from 09 may 1983<br>
 Time frame = daily (D)<br>
 Number of shares = 2708<br>
@@ -44,7 +44,7 @@ Table size in PostgreSQL = from 1.1 Gb (daily size grows by ~ )<br>
 
 List of shares:<br>
 file.name
-<br>
+<br><br>
 Database is in .csv file:<br>
 file.name
 
