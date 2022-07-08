@@ -7,14 +7,14 @@ Automation with the PostgreSQL Database with daily updates.<br>
 The project is open for everyone but was created for personal use.<br>
 _Вся информация доступна на Русском языке >>> [Gitflic.ru](https://gitflic.ru/project/kseno/servernew)_
 
-# Technical requirements.
+## Technical requirements.
 
 VPS/VDS - Windows server.<br>
 - Minimum requirements: WS 2012R, 1x2.2GHz, 1Gb RAM, 30Gb HDD, 1IP<br>
 - Python - Anaconda, Jupiter notebook. Optional VScode.<br>
 - PostgreSQL - PgAdmin, PgAgent.<br>
 
-# Description.
+## Description.
 
 Fully automate VPS/VDS server.<br>
 Using Python we create a script for parsing quotes from the site Yahoo Finance.<br>
@@ -26,29 +26,29 @@ Using PostrgeSQL and PgAgent we create triggers to transfer new quotes into the 
 Create triggers, scripts and time transactions to check the database.<br>
 Simple audit of tables and the entire database.<br>
 
-# Example.
+## Example.
 
-In this example, we'll look at downloading NYSE stock quotes.
+In this example, we'll look at downloading NYSE stock quotes.<br>
 Creating a database and setting up automatic updates.
-
+<br>
 Here is the source file that is updated every day at . 
-
+<br>
 Example database:
+<br>
+Period of data = from 09 may 1983<br>
+Time frame = daily (D)<br>
+Number of shares = 2708<br>
+Database size in .csv format = 1.3 Gb (every day the size increases by ~ )<br>
+Amount of attributes in PostgreSQL database = from 11 mln. (every day the size increases by ~ 2708 rows)<br>
+Table size in PostgreSQL = from 1.1 Gb (daily size grows by ~ )<br>
 
-Period of data = from 09 may 1983
-Time frame = daily (D)
-Number of shares = 2708
-Database size in .csv format = 1.3 Gb (every day the size increases by ~ )
-Amount of attributes in PostgreSQL database = from 11 mln. (every day the size increases by ~ 2708 rows)
-Table size in PostgreSQL = from 1.1 Gb (daily size grows by ~ )
-
-List of shares:
+List of shares:<br>
+file.name
+<br>
+Database is in .csv file:<br>
 file.name
 
-Database is in .csv file:
-file.name
-
-# File Structure:
+## File Structure:
 
 Python(parser)/<br>
 - ParserYahoo.ipynb - Structure and description of Yahoo Finance parser.<br>
@@ -59,7 +59,7 @@ PostgreSQL(db)/<br>
 - PgAgent.sql - Scripts to automate database with the help of PgAgent extension for PostgreSQL.<br>
 - Triggers.sql - Triggers and functions for working with the database.<br>
 
-# PostgreSQL database structure:
+## PostgreSQL database structure:
 
 Database/.
 - nyse_ticker_list - Tickers of all NYSE stocks and their names.
@@ -67,7 +67,7 @@ Database/.
 - nyse_data - The main table with all data.
 - VIEW_nyse_data - Table for analytics and public access.
 
-# PostgreSQL tables structure:
+## PostgreSQL tables structure:
 #### nyse_ticker_list - table:
 
 | Ticker | Name |
