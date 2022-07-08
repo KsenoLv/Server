@@ -5,7 +5,7 @@ Private server with an archive of quotes from the world's largest exchanges.<br>
 Automation with the PostgreSQL Database with daily updates.<br>
 
 The project is open for everyone but was created for personal use.<br>
-_Вся информация доступна на Русском языке >>> [Gitflic.ru](https://gitflic.ru/project/kseno/servernew)_ (italic)
+_Вся информация доступна на Русском языке >>> [Gitflic.ru](https://gitflic.ru/project/kseno/servernew)_
 
 # Technical requirements.
 
@@ -25,7 +25,28 @@ Also create a view for further market analysis (final user table).<br>
 Using PostrgeSQL and PgAgent we create triggers to transfer new quotes into the database.<br>
 Create triggers, scripts and time transactions to check the database.<br>
 Simple audit of tables and the entire database.<br>
-Gathering information about missing quotes, duplicate errors, etc.<br>
+
+# Example.
+
+In this example, we'll look at downloading NYSE stock quotes.
+Creating a database and setting up automatic updates.
+
+Here is the source file that is updated every day at . 
+
+Example database:
+
+Period of data = from 09 may 1983
+Time frame = daily (D)
+Number of shares = 2708
+Database size in .csv format = 1.3 Gb (every day the size increases by ~ )
+Amount of attributes in PostgreSQL database = from 11 mln. (every day the size increases by ~ 2708 rows)
+Table size in PostgreSQL = from 1.1 Gb (daily size grows by ~ )
+
+List of shares:
+file.name
+
+Database is in .csv file:
+file.name
 
 # File Structure:
 
@@ -54,7 +75,7 @@ Database/.
 | Varchar(30) | Varchar(100) |
 | GIBL | GibleMibele mobyle company |
 
-#### nyse_data - table:
+#### nyse_data / nyse_data_new - tables:
 
 | Date | Symbols | Adj_close | Close | High | Low | Open | Volume |
 |:----:|:-----------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
