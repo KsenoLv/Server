@@ -47,11 +47,11 @@ Database/.
 - VIEW_nyse_data - Table for analytics and public access.
 
 # PostgreSQL tables structure:
-
+## nyse_data - table:
 
 | Date | Symbols | Adj_close | Close | High | Low | Open | Volume |
-|:----------:|:-----------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
-|    Date    | Varchar(10) | Numeric(21,15) | Numeric(21,15) | Numeric(21,15) | Numeric(21,15) | Numeric(21,15) | Numeric(13,2) |
+|:----:|:-----------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
+| Date | Varchar(10) | Numeric(21,15) | Numeric(21,15) | Numeric(21,15) | Numeric(21,15) | Numeric(21,15) | Numeric(13,2) |
 | 1983-05-09 | GIBL | 13.1234.. | 13.1234.. | 13.1234.. | 13.1234.. | 13.1234.. | 123456789.12 |
 
 ----
