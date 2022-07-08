@@ -5,7 +5,7 @@ Private server with an archive of quotes from the world's largest exchanges.<br>
 Automation with the PostgreSQL Database with daily updates.<br>
 
 The project is open for everyone but was created for personal use.<br>
-Вся информация доступна на Русском языке >>> [Gitflic.ru](https://gitflic.ru/project/kseno/servernew)
+_Вся информация доступна на Русском языке >>> [Gitflic.ru](https://gitflic.ru/project/kseno/servernew)_ (italic)
 
 # Technical requirements.
 
@@ -45,6 +45,13 @@ Database/.
 - nyse_data_new - Table where daily updates are placed.
 - nyse_data - The main table with all data.
 - VIEW_nyse_data - Table for analytics and public access.
+
+# PostgreSQL tables structure:
+
+
+| Date | Symbols | Adj_close | Close | High | Low | Open | Volume
+| По левому краю | По центру | По правому краю |
+| 1983-05-09 | GIBL | 13.1234.. | 13.1234.. | 13.1234.. | 13.1234.. | 13.1234.. | 123456789.12
 
 ----
 
