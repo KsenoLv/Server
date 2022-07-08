@@ -35,18 +35,20 @@ Here is the source file that is updated every day at .
 <br><br>
 Example database:
 <br><br>
-Period of data = from 09 may 1983<br>
-Time frame = daily (D)<br>
-Number of shares = 2708<br>
-Database size in .csv format = 1.3 Gb (every day the size increases by ~ )<br>
-Amount of attributes in PostgreSQL database = from 11 mln. (every day the size increases by ~ 2708 rows)<br>
-Table size in PostgreSQL = from 1.1 Gb (daily size grows by ~ )<br>
+**Period of data** = from 09 may 1983<br>
+**Time frame** = daily (D)<br>
+**Number of shares** = 2708<br>
+**Database size in .csv format** = 1.3 Gb (every day the size increases by ~ )<br>
+**Amount of attributes in PostgreSQL database** = from 11 mln. (every day the size increases by ~ 2708 rows)<br>
+**Table size in PostgreSQL** = from 1.1 Gb (daily size grows by ~ )<br>
 
 List of shares:<br>
 file.name
 <br><br>
 Database is in .csv file:<br>
 file.name
+<br><br>
+**How to repeat all this on your own server, read below!**
 
 ## File Structure:
 
