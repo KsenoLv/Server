@@ -22,7 +22,7 @@ VPS/VDS - Windows server.<br>
 4 - The python script downloading the data for the missing tickers again and creates a new file.csv.<br>
 5 - PgAgent adds the missing tickers to the main table.<br>
 <br>
-The whole process is fully automatic.<br>
+The whole process is fully automated.<br>
 The cycle works continuously from Tuesday to Saturday.
 
 ## Example.
@@ -43,6 +43,8 @@ _Update every business day from 06:00 Am. till 06:30 Am. GMT_
 <br><br>
 List of shares:<br>
 __Download:__ [nyse_ticker_list.csv](http://193.124.65.84/NYSE/nyse_tickers_list.csv)
+List of shares for Python script:<br>
+__Download:__ [python_ticker_list.txt](http://193.124.65.84/NYSE/python_ticker_list.txt)
 <br><br>
 Database is in .csv file: <br>
 _Attention, file size = > 1.30 Gb._<br>

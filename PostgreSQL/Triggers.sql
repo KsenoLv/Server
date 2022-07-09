@@ -39,6 +39,6 @@ $$ language plpgsql
 
 create trigger nyse_trig_on_insert
 after insert on 
-mytable
+nyse_data_new
 for each row
 execute procedure nyse_trig()

@@ -8,18 +8,18 @@ select symbols, count(*) from nyse_data
 
 -- Scripts in a lightweight form, shows the last 10 attributes grouped by date and number of records.
 
-select date, count(*) from table_name_data group by date order by date desc limit 10;
+select date, count(*) from nyse_data group by date order by date desc limit 10;
 
 -- The script checks duplicates in a certain period.
 
-select symbols, date, count(*) from table_name_data group by symbols , date 
+select symbols, date, count(*) from nyse_data group by symbols , date 
     HAVING count(*) > 1 AND date BETWEEN '2022-01-29' AND '2022-12-31'; 
 
 -- Check missing tickers by date.
 
 SELECT ticker FROM nyse_ticker_list 
 WHERE ticker NOT IN 
-    (select symbols from table_name_data
+    (select symbols from nyse_data
      WHERE date = '2022-06-28' GROUP BY symbols)
 GROUP BY ticker;
 
