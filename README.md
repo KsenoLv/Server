@@ -42,11 +42,13 @@ Example database:
 **Table size in PostgreSQL** = from 1.1 Gb <br>
 
 List of shares:<br>
+Download: [nyse_ticker_list.csv](http://193.124.65.84/NYSE/nyse_data.csv)
 <br><br>
 Database is in .csv file: (Update every business day from 06:00 Am. till 06:30 Am.)<br>
-[nyse_data.csv](http://193.124.65.84/NYSE/nyse_data.csv)
+Download: [nyse_data.csv](http://193.124.65.84/NYSE/nyse_data.csv)
 <br><br>
 Yesterday's data: (Update every business day from 06:30 Am. till 07:00 Am. )
+Download: [nyse_data_new.csv](http://193.124.65.84/NYSE/nyse_data.csv)
 <br><br>
 **How to repeat all this on your own server, read below!**
 
