@@ -16,7 +16,8 @@ VPS/VDS - Windows server.<br>
 
 ## Description.
 
-Fully automate VPS/VDS server.<br><br>
+Fully automate VPS/VDS server.
+<br><br>
 Using Python we create a script for parsing quotes from the site Yahoo Finance.<br>
 The script is activated at a certain time every day to load new data.<br>
 Import the obtained quote file into the PostgreSQL database.<br>
@@ -29,24 +30,25 @@ Simple audit of tables and the entire database.<br>
 ## Example.
 
 In this example, we'll look at downloading NYSE stock quotes.<br>
-Creating a database and setting up automatic updates.
-<br><br>
-Here is the source file that is updated every day at . 
+Creating a database and setting up automatic updates. 
 <br><br>
 Example database:
 <br><br>
 **Period of data** = from 09 may 1983<br>
 **Time frame** = daily (D)<br>
 **Number of shares** = 2708<br>
-**Database size in .csv format** = 1.3 Gb (every day the size increases by ~ )<br>
-**Amount of attributes in PostgreSQL database** = from 11 mln. (every day the size increases by ~ 2708 rows)<br>
-**Table size in PostgreSQL** = from 1.1 Gb (daily size grows by ~ )<br>
+**Database size in .csv format** = 1.3 Gb<br>
+**Amount of attributes in PostgreSQL database** = from 11 mln. <br>
+**Table size in PostgreSQL** = from 1.1 Gb <br>
 
 List of shares:<br>
-file.name
+[www.kseno.site](https://www.kseno.site)
 <br><br>
-Database is in .csv file:<br>
-file.name
+Database is in .csv file: (Update every business day from 06:00 Am. till 06:30 Am.)<br>
+[www.kseno.site](ftp://administrator@193.124.65.84/nyse_data.csv)
+<br><br>
+Yesterday's data: (Update every business day from 06:30 Am. till 07:00 Am. )
+[www.kseno.site](https://www.kseno.site)
 <br><br>
 **How to repeat all this on your own server, read below!**
 
