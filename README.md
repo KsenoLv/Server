@@ -42,7 +42,7 @@ Example database:
 _Update every business day from 06:00 Am. till 06:30 Am. GMT_
 <br><br>
 List of shares:<br>
-__Download:__ [nyse_ticker_list.csv](http://193.124.65.84/NYSE/nyse_tickers_list.csv)
+__Download:__ [nyse_ticker_list.csv](http://193.124.65.84/NYSE/nyse_tickers_list.csv)<br>
 List of shares for Python script:<br>
 __Download:__ [python_ticker_list.txt](http://193.124.65.84/NYSE/python_ticker_list.txt)
 <br><br>
