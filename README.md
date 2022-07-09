@@ -42,13 +42,10 @@ Example database:
 **Table size in PostgreSQL** = from 1.1 Gb <br>
 
 List of shares:<br>
-[www.kseno.site](https://www.kseno.site)
 <br><br>
 Database is in .csv file: (Update every business day from 06:00 Am. till 06:30 Am.)<br>
-[www.kseno.site](ftp://administrator@193.124.65.84/nyse_data.csv)
 <br><br>
 Yesterday's data: (Update every business day from 06:30 Am. till 07:00 Am. )
-[www.kseno.site](https://www.kseno.site)
 <br><br>
 **How to repeat all this on your own server, read below!**
 
