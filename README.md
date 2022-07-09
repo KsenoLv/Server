@@ -41,16 +41,18 @@ Example database:
 **Amount of attributes in PostgreSQL database** = from 11 mln. <br>
 **Table size in PostgreSQL** = from 1.1 Gb <br>
 
-List of shares:<br>
-__Download:__ [nyse_ticker_list.csv](http://193.124.65.84/NYSE/nyse_data.csv)
+_Update every business day from 06:00 Am. till 06:30 Am._
 <br><br>
-Database is in .csv file: (Update every business day from 06:00 Am. till 06:30 Am.)<br>
+List of shares:<br>
+__Download:__ [nyse_ticker_list.csv](http://193.124.65.84/NYSE/nyse_ticker_list.csv)
+<br><br>
+Database is in .csv file: <br>
+_Attention, file size = > 1.30 Gb._<br>
 __Download:__ [nyse_data.csv](http://193.124.65.84/NYSE/nyse_data.csv)
 <br><br>
-Yesterday's data: (Update every business day from 06:30 Am. till 07:00 Am. )<br>
-__Download:__ [nyse_data_new.csv](http://193.124.65.84/NYSE/nyse_data.csv)
+Yesterday's data: <br>
+__Download:__ [nyse_data_new.csv](http://193.124.65.84/NYSE/nyse_data_new.csv)
 <br><br>
-**How to repeat all this on your own server, read below!**
 
 ## File Structure:
 
@@ -66,12 +68,16 @@ PostgreSQL(db)/<br>
 ## PostgreSQL database structure:
 
 Database/.
-- nyse_ticker_list - Tickers of all NYSE stocks and their names.
-- nyse_data_new - Table where daily updates are placed.
-- nyse_data - The main table with all data.
-- VIEW_nyse_data - Table for analytics and public access.
+- nyse_ticker_list - Tickers of all NYSE stocks and their names.<br>
+- nyse_data_new - Table where daily updates are placed.<br>
+- nyse_data - The main table with all data.<br>
+- VIEW_nyse_data - Table for analytics and public access.<br>
 
 ## PostgreSQL tables structure:
+
+The scripts use a query structure based on the tables below.<br>
+Don't forget to change the names of the columns and tables to suit your parameters.<br>
+
 #### nyse_ticker_list - table:
 
 | Ticker | Name |
