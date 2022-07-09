@@ -14,18 +14,16 @@ VPS/VDS - Windows server.<br>
 - Python - Anaconda, Jupiter notebook. Optional VScode.<br>
 - PostgreSQL - PgAdmin, PgAgent.<br>
 
-## Description.
+## Short description.
 
-Fully automate VPS/VDS server.
-<br><br>
-Using Python we create a script for parsing quotes from the site Yahoo Finance.<br>
-The script is activated at a certain time every day to load new data.<br>
-Import the obtained quote file into the PostgreSQL database.<br>
-Create a table of the whole database and tables for integrity and validation.<br>
-Also create a view for further market analysis (final user table).<br>
-Using PostrgeSQL and PgAgent we create triggers to transfer new quotes into the database.<br>
-Create triggers, scripts and time transactions to check the database.<br>
-Simple audit of tables and the entire database.<br>
+1 - Python script automatically downloading data to the server in file.csv format.<br>
+2 - The script adds new data to the PlpgSql table at a specific time using PgAgent.<br>
+3 - Trigger checks missing tikers and creates a file_no_data.csv.<br>
+4 - The python script downloading the data for the missing tickers again and creates a new file.csv.<br>
+5 - PgAgent adds the missing tickers to the main table.<br>
+<br>
+The whole process is fully automatic.<br>
+The cycle works continuously from Tuesday to Saturday.
 
 ## Example.
 
@@ -41,10 +39,10 @@ Example database:
 **Amount of attributes in PostgreSQL database** = from 11 mln. <br>
 **Table size in PostgreSQL** = from 1.1 Gb <br>
 
-_Update every business day from 06:00 Am. till 06:30 Am._
+_Update every business day from 06:00 Am. till 06:30 Am. GMT_
 <br><br>
 List of shares:<br>
-__Download:__ [nyse_ticker_list.csv](http://193.124.65.84/NYSE/nyse_ticker_list.csv)
+__Download:__ [nyse_ticker_list.csv](http://193.124.65.84/NYSE/nyse_tickers_list.csv)
 <br><br>
 Database is in .csv file: <br>
 _Attention, file size = > 1.30 Gb._<br>
