@@ -44,7 +44,7 @@ Example database:
 List of shares:<br>
 <br><br>
 Database is in .csv file: (Update every business day from 06:00 Am. till 06:30 Am.)<br>
-[Gitflic.ru](http://193.124.65.84/NYSE/iis-85.png)
+[nyse_data.csv](http://193.124.65.84/NYSE/nyse_data.csv)
 <br><br>
 Yesterday's data: (Update every business day from 06:30 Am. till 07:00 Am. )
 <br><br>
