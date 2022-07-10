@@ -1,6 +1,6 @@
--- ТРИГГЕРЫ ПЕРЕНОСА ДАННЫХ ИХ ВРЕМЕННОЙ ТАБЛИЦЫ В ОСНОВНУЮ.
---Триггер и функция переносит новые данные в основную таблицу nyse_data/
--- Функиция
+-- TRIGGERS TO MOVE DATA FROM THE TEMPORARY TABLE TO THE MAIN TABLE.
+-- Trigger and function transfers data from nyse_data_new to the main table nyse_data.
+-- unction
 
 create or replace function nyse_trig() 
 returns trigger AS $$
@@ -28,14 +28,15 @@ BEGIN
 
 if(date = CURRENT_DATE -1) then
 insert into nyse_data values(
-       new.date, new.symbols, new.adj_close, new.close, new.High, new.Low, new.Open, new.volume);
+       new.date, new.symbols, new.adj_close, new.close, new.High, new.Low, new.Open, new.volume
+       );
 end if;
 
 return new;
 END;
 $$ language plpgsql
 
--- Тригер
+-- Trigger
 
 create trigger nyse_trig_on_insert
 after insert on 

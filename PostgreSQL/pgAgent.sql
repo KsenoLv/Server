@@ -1,5 +1,5 @@
 -- SCRIPTS FOR pgAgent 
--- Script for adding new data to table_name_new_data
+-- Script for adding new data to nyse_data_new
 
 copy nyse_data_new FROM 'C:\folder_name\file_name.csv' DELIMITER ',' CSV HEADER;
 

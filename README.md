@@ -4,7 +4,7 @@
 Private server with an archive of quotes from the world's largest exchanges.<br>
 Automation with the PostgreSQL Database with daily updates.<br>
 
-The project is open for everyone but was created for personal use.<br>
+The project is open for everyone but was created for personal use.<br><br>
 _Вся информация доступна на Русском языке >>> [Gitflic.ru](https://gitflic.ru/project/kseno/servernew)_
 
 ## Technical requirements.
@@ -47,7 +47,6 @@ List of shares for Python script:<br>
 __Download:__ [python_ticker_list.txt](http://193.124.65.84/NYSE/python_ticker_list.txt)
 <br><br>
 Database is in .csv file: <br>
-_Attention, file size = > 1.30 Gb._<br>
 __Download:__ [nyse_data.csv](http://193.124.65.84/NYSE/nyse_data.csv)
 <br><br>
 Yesterday's data: <br>
@@ -56,10 +55,10 @@ __Download:__ [nyse_data_new.csv](http://193.124.65.84/NYSE/nyse_data_new.csv)
 
 ## File Structure:
 
-Python(parser)/<br>
+Python/<br>
 - ParserYahoo.ipynb - Structure and description of Yahoo Finance parser.<br>
 
-PostgreSQL(db)/<br>
+PostgreSQL/<br>
 - Tables.sql - Scripts to create tables.<br>
 - PgAdmin.sql - Scripts to work with the ready data table.<br>
 - PgAgent.sql - Scripts to automate database with the help of PgAgent extension for PostgreSQL.<br>
@@ -69,7 +68,7 @@ PostgreSQL(db)/<br>
 
 Database/.
 - nyse_ticker_list - Tickers of all NYSE stocks and their names.<br>
-- nyse_data_new - Table where daily updates are placed.<br>
+- nyse_data_new - Table whith daily updates.<br>
 - nyse_data - The main table with all data.<br>
 - VIEW_nyse_data - Table for analytics and public access.<br>
 
