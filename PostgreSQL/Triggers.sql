@@ -1,6 +1,6 @@
 -- TRIGGERS TO MOVE DATA FROM THE TEMPORARY TABLE TO THE MAIN TABLE.
 -- Trigger and function transfers data from nyse_data_new to the main table nyse_data.
--- unction
+-- Function.
 
 create or replace function nyse_trig() 
 returns trigger AS $$
