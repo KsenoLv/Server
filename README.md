@@ -75,7 +75,7 @@ Database/.
 ## PostgreSQL tables structure:
 
 The scripts use a query structure based on the tables below.<br>
-Change it, in table.sql script if you will use different column and table names.<br>
+Change it, in Tables.sql script if you will use different column and table names.<br>
 
 #### nyse_ticker_list - table:
 
