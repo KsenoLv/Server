@@ -23,7 +23,6 @@ VPS/VDS - Windows server.<br>
 5 - PgAgent adds the missing tickers to the main table.<br>
 <br>
 The whole process is fully automated.<br>
-The cycle works continuously from Tuesday to Saturday.
 
 ## Example.
 
@@ -39,7 +38,8 @@ Example database:
 **Amount of attributes in PostgreSQL database** = from 11 mln. <br>
 **Table size in PostgreSQL** = from 1.1 Gb <br>
 
-_Update every business day from 06:00 Am. till 06:30 Am. GMT_
+_Update every business day from 06:00 Am. till 06:30 Am. GMT_<br>
+_The cycle works continuously from Tuesday to Saturday_.
 <br><br>
 List of shares:<br>
 __Download:__ [nyse_ticker_list.csv](http://193.124.65.84/NYSE/nyse_tickers_list.csv)<br>
