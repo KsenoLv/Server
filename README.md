@@ -4,7 +4,8 @@
 Private server with an archive of quotes from the world's largest exchanges.<br>
 Automation with the PostgreSQL Database with daily updates.<br>
 
-The project is open for everyone but was created for personal use.<br><br>
+The project is open for everyone but was created for personal use.<br>
+Repository is updated, with ongoing support.<br><br>
 _Вся информация доступна на Русском языке >>> [Gitflic.ru](https://gitflic.ru/project/kseno/servernew)_
 
 ## Technical requirements.
@@ -18,7 +19,7 @@ VPS/VDS - Windows server.<br>
 
 1 - Python script automatically downloading data to the server in file.csv format.<br>
 2 - The script adds new data to the PlpgSql table at a specific time using PgAgent.<br>
-3 - Trigger checks missing tikers and creates a file_no_data.csv.<br>
+3 - Trigger checks missing tickers and creates a file_no_data.csv.<br>
 4 - The python script downloading the data for the missing tickers again and creates a new file.csv.<br>
 5 - PgAgent adds the missing tickers to the main table.<br>
 <br>
@@ -68,7 +69,7 @@ PostgreSQL/<br>
 
 Database/.
 - nyse_ticker_list - Tickers of all NYSE stocks and their names.<br>
-- nyse_data_new - Table whith daily updates.<br>
+- nyse_data_new - Table with daily updates.<br>
 - nyse_data - The main table with all data.<br>
 - VIEW_nyse_data - Table for analytics and public access.<br>
 
@@ -82,7 +83,7 @@ Change it, in Tables.sql script if you will use different column and table names
 | Ticker | Name |
 |:-----------:|:------------:|
 | Varchar(30) | Varchar(100) |
-| GIBL | GibleMibele mobyle company |
+| GIBL | GibleMibele mobile company |
 
 #### nyse_data / nyse_data_new - tables:
 
