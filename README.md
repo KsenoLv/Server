@@ -94,6 +94,10 @@ Change it, in Tables.sql script if you will use different column and table names
 
 ----
 
+Subscribe to updates and news >>> [Telegram](https://t.me/fxmmsqleng)
+
+----
+
 Author: Mihail Ksenofontov<br>
 Contact: ksenofontov.mihail@gmail.com<br>
 Web Page: [www.kseno.site](https://www.kseno.site)<br>
